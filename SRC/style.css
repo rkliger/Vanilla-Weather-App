@@ -53,6 +53,7 @@ main {
 .current-weather {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start; /* lift icon/temperature toward city text */
 }
 
 .current-city {
@@ -71,16 +72,23 @@ main {
   color: #f65282;
 }
 
-.current-temperature-icon {
+#icon {
   position: relative;
-  top: -8px;
-  font-size: 40px;
+  top: -12px; /* nudge up to align with city */
   margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  font-size: 40px;
 }
 
 .current-temperature-value {
   font-size: 80px;
   font-weight: bold;
+  position: relative;
+  top: -12px; /* lift number closer to city line */
 }
 
 .current-temperature-unit {
