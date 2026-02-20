@@ -28,3 +28,5 @@ form.addEventListener("submit", function (event) {
   let city = input.value;
   searchCity(city);
 });
+
+searchCity("Denver");
